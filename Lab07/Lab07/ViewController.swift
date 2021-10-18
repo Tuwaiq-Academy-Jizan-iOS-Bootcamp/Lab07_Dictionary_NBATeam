@@ -14,8 +14,23 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        print("The NBA Leagus have the following players \(team1) and \(team2) and \(team3) .")
+     print("The NBA Leagus have the following players :")
+    print("team1  : ")
+        
+        for key in team1.keys
+        {
+           print("-\(key)")
+        }
+        print("And Team2  : ")
+        
+        for key in team2.keys
+        {
+           print("-\(key)")
+        }
+        print("And Team3  : ")
+        for key in team3.keys
+        {
+           print("-\(key)")
+        }
+        }
     }
-
-}
-
