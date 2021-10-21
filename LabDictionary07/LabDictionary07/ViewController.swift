@@ -25,7 +25,7 @@ class ViewController: UIViewController {
             
         }
         
-        
+        //Dictinary in for loop
         print(" * the Lakers * ")
         
             for (_,value) in Lakers{
@@ -36,9 +36,27 @@ class ViewController: UIViewController {
         for (_,value) in Clipperss{
           print ("\(value)")
     }
- 
-    
-   //print ("The NBA League got the following player : the GoldenStateWarriors \(GoldenStateWarriors(value))   the Lakers  \(Lakers(value))  the Clipperss  \(Clipperss(value)) ")
+        //print ways
+        print(GoldenStateWarriors)
+        
+       print(Clipperss["player1"]!)
+        //update values
+        Lakers.updateValue("Liyam", forKey: "player2")
+        print(Lakers)
+        Clipperss["plyar1"] = "Adem"
+        print(Clipperss)
+        
+        //change values and keys for the dicinaty :)
+        GoldenStateWarriors = [ "player1":"Ali","player2":"Ahmad"]
+        print(GoldenStateWarriors)
+        
+        //delet
+        Lakers.removeValue(forKey: "playar3")
+        print(Lakers)
 
+        
+        
+        
+        
 }
 }
