@@ -14,20 +14,41 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
        
-        let goldenStateWarriors = ["goldenStateWarriors 1":"Curry","goldenStateWarriors 2": "Thomson","goldenStateWarriors 3":"Green"]
-        let lakers = ["lakers 1":"Lebron","lakers 2":"Westbrook","lakers 3":"Davis"]
-        let clippers = ["clippers 1":"Leornard","clippers 2":"Batum","clippers 3":"Ibaka"]
+        var goldenStateWarriors = [ 1:"Curry", 2: "Thomson",3:"Green"]
+        var lakers = [1:"Lebron",2:"Westbrook",3:"Davis"]
+        var clippers = [1:"Leornard",2:"Batum",3:"Ibaka"]
        
-        func anb (a:String ,b:String, c:String)-> String
+        func nba (a:String ,b:String, c:String)-> String
         {
             //print(a+b+c)
             return a+b+c
             
         }
-          let z = anb (a: "\(goldenStateWarriors)", b: "\(lakers)", c: "\(clippers)")
+          let z = nba (a: "\(goldenStateWarriors)", b: "\(lakers)", c: "\(clippers)")
           print("The NBA League got the following player \(z)")
          // print("The NBA League got the following player\(goldenStateWarriors)  \(lakers) \(clippers)")
-         
+        print(lakers.count)
+        print(clippers.keys)
+        print(goldenStateWarriors.capacity)
+        print(lakers.customMirror)
+        print(clippers.removeValue(forKey: 2)!)
+        print(clippers)
+        print(clippers.updateValue("mikil", forKey: 3)!)
+        print(clippers)
+        //print(clippers.ap)
+        clippers.updateValue("jak", forKey: 4)
+        clippers[5] = "max"//[4:"jak"]
+        print(clippers)
+        print(goldenStateWarriors[3]!)
+        for (Key,_) in clippers {
+            if (Key%2==0){
+                print(clippers[Key]!)
+            }
+        }
+        print(clippers.shuffled())
+        print(lakers.removeAll())
+        print(lakers)
+
 /*
         func player() {
 
