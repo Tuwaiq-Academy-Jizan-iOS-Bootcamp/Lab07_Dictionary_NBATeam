@@ -4,7 +4,7 @@
 //
 //  Created by layla hakami on 12/03/1443 AH.
 //
-
+[8:46 am, 24/10/2021] Layla Hakami🎶:
 import UIKit
 
 
@@ -37,9 +37,27 @@ class ViewController: UIViewController {
         for (_,value) in Clipperss{
           print ("\(value)")
     }
- 
-    
-   //print ("The NBA League got the following player : the GoldenStateWarriors \(GoldenStateWarriors(value))   the Lakers  \(Lakers(value))  the Clipperss  \(Clipperss(value)) ")
+ print(GoldenStateWarriors)
 
+   print(Clipperss["player1"]!)
+        
+    
+        Lakers.updateValue("Westbrook",forKey: "player2")
+        print(Lakers)
+        
+        Clipperss["player1"]="mohammad"
+        
+        print(Clipperss)
+        
+        GoldenStateWarriors = ["player1":"Ali","player2":"Osama"]
+        
+        print(GoldenStateWarriors)
+        
+        Lakers.removeValue(forKey: "player3")
+        print(Lakers)
+        
+     
+   
 }
 }
+
