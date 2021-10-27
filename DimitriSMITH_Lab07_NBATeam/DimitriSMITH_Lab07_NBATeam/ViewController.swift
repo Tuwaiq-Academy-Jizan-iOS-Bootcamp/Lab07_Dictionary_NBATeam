@@ -7,6 +7,9 @@
 
 import UIKit
 
+class NBATeam {
+}
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
